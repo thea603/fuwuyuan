@@ -1,0 +1,48 @@
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #FFFFFF;
+}
+.mui-bar-nav{
+	background: #FF3B3B;
+}
+.mui-bar-nav a{
+	color: white;
+}
+.mui-title{
+	letter-spacing: 3px;
+	color: white;
+}
+.mui-content{
+	background: white;
+}
+.main{
+	margin-top: 100px;
+}
+.poll_code{
+	border-bottom: 1px solid #E8E8E8;
+}
+.mui-content input{
+	border: none;
+	border-bottom: 1px solid #E8E8E8;
+	padding: 20px 0 10px 40px;
+}
+input::-webkit-input-placeholder {
+	color: #D8D9DA !important; 
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.mui-btn-negative{
+	border-radius: 0;
+	width: 80%;
+	background: #FF3B3B;
+	margin: 30px 10%;
+	padding: 10px 20px;
+	font-size: 16px;
+	letter-spacing: 10px;
+}
+input:focus{
+	border: 1px solid #6699FF;
+}
+
+

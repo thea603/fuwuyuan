@@ -1,0 +1,144 @@
+
+
+*{
+	font-family: "Microsoft YaHei";
+}
+
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	/*position: relative;*/
+	height:100%;
+	
+}
+.technician_info{
+	background: #FFFFFF;
+	height: 120px;
+}
+.technician_img{
+	width: 26%;
+	float: left;
+	height: 100px;
+	margin: 10px ;
+}
+.technician_img img{
+	width: 100%;
+	height: 100%;
+}
+.technician_content{
+
+	float: left;
+	height: 120px;
+}
+.technician_content span{
+	color: #6F6F6F;
+	font-size: 15px;
+	display: block;
+}
+.technician_content span:nth-child(1){
+	width: 50%;
+	float: left;
+	margin-top: 45px;
+
+	font-size: 22px;
+}
+.technician_content span:nth-child(2){
+	display: inline;
+	width: 50%;
+
+	margin-top: 45px;
+	margin-bottom: 4px;
+	float: left;
+	font-size: 14px;
+}
+.technician_content span:nth-child(3){
+	display: block;
+ 	margin-bottom: 4px;
+ 	width: 100%;
+
+
+}
+.technician_content span:nth-child(4){
+	display: block;
+
+}
+.technician_book{
+	margin:10px 0px;
+	border-bottom:1px solid #DEDEDE;
+}
+.technician_book div{
+	color: #535353;
+	padding-left: 5%;
+	border-bottom:1px solid #DEDEDE;
+}
+.technician_book ul{
+	background: #FFFFFF;
+	margin: 0px;
+}
+.technician_book ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #949293;
+	border-top:1px solid  #DEDEDE;
+}
+.technician_book ul li:nth-child(1){
+	border-top:none;
+}
+
+
+.technician_project{
+	margin:10px 0px;
+	border-bottom:1px solid #DEDEDE;
+}
+.technician_project div{
+	color: #535353;
+	padding-left: 5%;
+	border-bottom:1px solid #DEDEDE;
+}
+.technician_project ul{
+	background: #FFFFFF;
+	margin: 0px;
+}
+.technician_project ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #949293;
+	border-top:1px solid  #DEDEDE;
+}
+.technician_project ul li:nth-child(1){
+	border-top:none;
+}
+.technician_other{
+	background: #FFFFFF;
+	color: #949293;
+	font-size: 15px;
+}
+.technician_other .infor{
+	border-bottom: 1px solid #DEDEDE;
+	height: 40px;
+	line-height: 40px;
+}
+.infor span:nth-child(1){
+
+	padding-left: 8%;
+}
+.infor span:nth-child(2){
+	float: right;
+	padding-right: 2%;
+}
+.technician_other .infor:nth-child(3) span:nth-child(2){
+	border:1px solid #DEDEDE;
+
+	height: 30px;
+	width: 20%;
+	margin-top: 5px;
+	margin-right:2% ;
+	line-height: 30px;
+	text-align: center;
+}

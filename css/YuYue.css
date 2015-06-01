@@ -1,0 +1,34 @@
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #FFFFFF;
+}
+.mui-bar-nav{
+	background: #FF3B3B;
+	color: white;
+}
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+	letter-spacing: 2px;
+}
+.mui-icon-plusempty{
+	font-weight: bold;
+}
+.mui-content{
+	background: #FFFFFF;
+	margin-top: 200px;
+}
+.record{
+	display: block;
+	font-size: 13px;
+	letter-spacing: 2px;
+	color: #888888;
+	width: 50%;
+	text-align: center;
+	margin: 0 25%;
+	
+	
+}

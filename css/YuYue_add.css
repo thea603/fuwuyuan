@@ -1,0 +1,79 @@
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #F1F1F1;
+}
+.mui-bar-nav{
+	background: #FF3B3B;
+	color: white;
+}
+.mui-pull-left{
+	color: white;
+}
+.mui-title{
+	color: white;
+	letter-spacing: 3px;
+}
+
+.main{
+	margin-top: 30px;
+}
+.mui-content{
+	position: relative;
+	background: #F1F1F1;
+}
+.infor{
+	margin-top: 1px;
+	height: 50px;
+	background: white;
+	position: relative;
+}
+.infor .iconfont{
+	font-size: 17px;
+	color: #70CAEC;
+	position: absolute;
+	top: 17px;
+	left: 5px;
+}
+.infor input{
+	border: none;
+	display: inline;
+	height: 48px;
+	padding-left: 30px;
+	width: 100%;
+}
+.infor .mui-icon-arrowdown{
+	font-size: 17px;
+	color: #70CAEC;
+}
+input:focus{
+	border: 1px solid #6699FF;
+}
+input::-webkit-input-placeholder {
+	color: #A7A7A7 !important; 
+	font-size: 13px;
+}
+
+.select{
+	width: 85%;
+	color: #A7A7A7;
+	padding-left: 10px;
+	font-size: 13px;
+	margin-left: 16px;
+	height: 48px;
+}
+.mui-icon-arrowdown{
+	color: #CDCDCD;
+}
+.mui-btn-negative{
+	border-radius: 0;
+	width: 80%;
+	background: #FF3B3B;
+	margin: 50px 10%;
+	padding: 8px 20px;
+	font-size: 16px;
+	letter-spacing: 3px;
+}
+
+
+

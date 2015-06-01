@@ -1,0 +1,80 @@
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #F1F1F1;
+}
+.mui-bar-nav{
+	background:#1FBBA6;
+}
+.mui-title{
+	letter-spacing: 3px;
+	color: white;
+}
+.main{
+	margin-top: 40px;
+}
+.mui-content{
+	position: relative;
+}
+.infor{
+	margin-top: 1px;
+	height: 40px;
+	background: white;
+	position: relative;
+}
+.infor .mui-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.infor span{
+	font-size: 17px;
+	line-height: 40px;
+	color: #70CAEC;
+	margin-left: 5px;
+}
+.infor input{
+	border-color: white;
+	display: inline;
+	width: 100%;
+	line-height: 20px;
+	padding-left: 30px;
+}
+
+.mui-btn-block{
+	border: none;
+	width: 20%;
+	background: #;
+	margin: 40px auto 0 auto;
+	letter-spacing: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+.loca_a1{
+	position: absolute;
+	top: 180px;
+	right: 10%;
+	color: #908E8F;
+	font-size: 15px;
+}
+.loca_a2{
+	position: absolute;
+	top: 180px;
+	left: 10%;
+	color: #908E8F;
+	font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
+	color: #BDBDBD !important; 
+	font-size: 14px;
+}
+input:focus{
+	border: 1px solid #6699FF;
+}
+
+
+
+
+
+

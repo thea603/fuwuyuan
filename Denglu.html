@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <script src="js/mui.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/mui.css"/>
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/Denglu.css" rel="stylesheet"/>
+	    <script src="js/jquery-html5Validate-min.js" type="text/javascript" charset="utf-8"></script>
+		<title>登录</title>
+	</head>
+	<body>
+		<form id="testForm" action="" method="post">
+		<header class="mui-bar mui-bar-nav">
+			<input  type="submit" class="mui-btn mui-pull-right" id="next" value="确定" />
+			<h1 class="mui-title">登录</h1>
+		</header>
+		<div class="mui-content">
+			<div class="main"></div>
+			<div class="infor">
+				<span class="mui-icon iconfont icon-shouji"></span>
+				<input type="text" placeholder="请输入您的手机号码" />
+			</div>
+			<div class="infor">
+				<span class="mui-icon iconfont icon-tubiao"></span>
+				<input type="password" placeholder="请输入您的密码" />
+			</div>
+			<!--<button class="mui-btn mui-btn-negative mui-btn-block">立即登录</button>-->
+			
+			<a class="loca_a2" href="#">找回密码</a>
+			<a class="loca_a1" href="#">注册新账号</a>
+		</div>
+		</form>
+		<script>
+	$("#testForm").html5Validate(function() {
+//				alert('go');
+//				alert($('#testForm').serialize());
+//				$.get('http://192.168.1.100/index.php',$('#testForm').serialize(),function(data) {
+//					alert(data);
+//				});
+		});
+			
+			$(function(){
+				$('#next').click(function(){
+					mui.openWindow({
+					    url: 'Dingdan_guanli.html'
+					  });
+//					window.location.href='Dingdan_guanli.html';
+				});
+				
+				$('.loca_a2').click(function(){
+					mui.openWindow({
+					    url: 'recover_pass.html'
+					  });
+//					window.location.href='Dingdan_guanli.html';
+				});
+				
+				$('.loca_a1').click(function(){
+					mui.openWindow({
+					    url: 'ZhuCe.html'
+					  });
+//					window.location.href='Dingdan_guanli.html';
+				});
+				
+			})
+			
+			
+			
+				
+		
+		mui.init({});
+		
+	if(window.plus){plusReady();}else{document.addEventListener('plusready',plusReady,false);}
+
+	function plusReady(){
+		if ('Android' == plus.os.name) {
+			var first = null;
+				mui.back = function() {
+					if (!first) {
+						first = new Date().getTime();
+						mui.toast('再按一次退出应用');
+						setTimeout(function() {
+							first = null;}, 1000);
+						}
+					else {
+						if (new Date().getTime() - first < 1000) {
+						plus.runtime.quit();
+							}
+						}
+									}
+						}
+						}
+	
+//	document.querySelector('.mui-btn-negative').addEventListener('tap', function() {
+////打开关于页面
+//	mui.openWindow({
+// 	 url: 'Dingdan_guanli.html', 
+//  id:'info'
+//});
+//});
+//setTimeout( function(){
+//		plus.nativeUI.closeWaiting();
+//	}, 1);
+//
+//if(window.plus){
+//	plusReady();
+//}else{
+//	document.addEventListener("plusready",plusReady,false);
+//}
+//			$(function(){
+//				$('.mui-btn-negative').click(function(){
+//					mui.openWindow({
+//					    url: 'Dingdan_guanli.html'
+//					  });
+////					window.location.href='Dingdan_guanli.html';
+//				})
+//			})
+		</script>
+	</body>
+</html>

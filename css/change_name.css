@@ -1,0 +1,40 @@
+
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #EFEFF4;
+	margin: 0px;
+	padding: 0px;;
+}
+
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	/*position: relative;*/
+	height:100%;
+	
+}
+.infor{
+	width: 100%;
+	height: 40px;
+	/*background: #FFFFFF;*/
+	position: relative;
+	margin: 10px 0 0 0;
+}
+
+input::-webkit-input-placeholder {
+	color: #A7A7A7 !important; 
+	font-size: 14px;
+}
+.canle{
+	
+}
+input:focus{
+	border: 1px solid #6699FF;
+}
+
+

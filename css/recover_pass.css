@@ -1,0 +1,103 @@
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #F5F3F4;
+}
+
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+	letter-spacing: 3px;
+}
+.mui-content{
+	background: #F5F3F4;
+	position: relative;
+}
+.main{
+	margin-top: 30px;
+}
+
+.infor{
+	margin-top: 1px;
+	height: 40px;
+	background: white;
+	position: relative;
+}
+.infor .mui-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.infor span{
+	font-size: 17px;
+	line-height: 40px;
+	color: #70CAEC;
+	margin-left: 5px;
+}
+.infor input{
+	border-color: white;
+	display: inline;
+	width: 100%;
+	line-height: 20px;
+	padding-left: 30px;
+}
+.infor_2{
+	margin-top: 1px;
+	height: 40px;
+	width: 70%;
+	background: white;
+	position: relative;
+}
+.infor_2 .mui-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.infor_2 span{
+	font-size: 17px;
+	line-height: 40px;
+	color: #70CAEC;
+	margin-left: 5px;
+}
+.infor_2 input{
+	border-color: white;
+	display: inline;
+	width: 100%;
+	line-height: 20px;
+	padding-left: 30px;
+}
+#btn{
+	color:#FFFFFF
+}
+ .mui-btn-positive{
+	width: 29%;
+	font-size: 13px;
+	letter-spacing: 2px;
+	height: 40px;
+	padding: 5px;
+	color:#FFFFFF;
+	position: absolute;
+	right: 1px;
+	top: 115px;
+	border-radius 0;
+}
+.mui-btn-negative{
+	border-radius: 0;
+	width: 80%;
+	/*background: #FF3B3B;*/
+	margin: 30px 10%;
+	padding: 10px 20px;
+	font-size: 16px;
+	border:none;
+	letter-spacing: 3px;
+}
+input::-webkit-input-placeholder {
+	color: #BDBDBD !important; 
+	font-size: 14px;
+}
+input:focus{
+	border: 1px solid #6699FF;
+}
+

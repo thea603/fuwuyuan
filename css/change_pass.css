@@ -1,0 +1,70 @@
+
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #F5F3F4;
+}
+.mui-bar-nav{
+	background: #FF3B3B;
+	color: white;
+}
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	background: #F5F3F4;
+}
+.main{
+	margin-top: 40px;
+}
+.infor{
+	margin-top: 1px;
+	height: 40px;
+	background: white;
+	position: relative;
+}
+.size{
+	color: #B1AFAF;
+	letter-spacing: 2px;
+	font-size: 14px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.input_size[type=password]{
+	display: inline;
+	width: 100%;
+	border: none;
+	height: 39px;
+	padding-left: 70px;
+}
+.input_size_2[type=password]{
+	display: inline;
+	width: 100%;
+	border: none;
+	height: 39px;
+	padding-left: 100px;
+}
+.mui-btn-negative{
+	border-radius: 0;
+	width: 80%;
+	background: #FF3B3B;
+	margin: 30px 10%;
+	padding: 10px 20px;
+	font-size: 16px;
+	letter-spacing: 3px;
+}
+input[type=password]:focus{
+	border: 1px solid #6699FF;
+}
+
+
+
+
+
+
+
+

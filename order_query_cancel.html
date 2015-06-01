@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <link rel="stylesheet" href="css/mui.css" />
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/order_query_cancel.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/public.css" />
+		<title>搜索</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<input  type="submit" class="mui-btn mui-pull-right" id="next" value="确定" />
+			<h1 class="mui-title">XXXXXX会所</h1>
+		</header>
+		<!--<nav class="mui-bar mui-bar-tab">
+  		    
+		</nav>-->
+		<div class="mui-content">
+			<div class="infor">
+				<input class="Search book_Search" type="text" placeholder="请输入手机号码/手牌" style="width:80%;margin: 0px;" />
+				<div class="Search_submit book_Search_submit"> 确认</div>
+			</div>
+			
+			<div class="order_lists"  >
+			  <div class="order_title" >场内预约</div>
+			  <ul>
+			  	<li >订单号<span class="lists order_num">1111122</span></li>
+			  	<li>手牌<span class="lists shoupai_num">34</span></li>
+			  	<li>顾客<span class="lists Customer">吴伟东</span></li>
+			  	<li>技师工号<span class="lists employee_id">023<span class="look">查看技师</span></span></li>
+			  	<li>项目<span class="lists project">桑拿</span></li>
+			  	<li>价格<span class="lists price">$234</span></li>
+			  	<li>创建时间<span class="lists create_time">17:00</span></li>
+			  	<li>预定时间<span class="lists book_time">18:00</span></li>
+			  </ul>
+			  
+			  <div class="order_state">
+				<div class="state">
+					状  态
+				</div>
+				<div class="reason">
+					
+				</div>
+			</div>
+			
+			<div class="footer">
+  		    		<span>取消</span>
+  		    </div>
+			</div>
+			
+			
+		</div>
+		<script>
+		mui.init();
+		$(function(){
+//						$('#next').click(function(){
+//		
+//							mui.openWindow({
+//							    url: 'create_order.html'
+//							  });
+//						});		
+//						
+						$('.look').click(function(){
+		
+							mui.openWindow({
+							    url: "technician_list.html"
+							  });
+						});			
+					})
+		</script>
+	</body>
+</html>

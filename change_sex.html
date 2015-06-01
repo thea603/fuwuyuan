@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	     <script src="js/cancel.js" type="text/javascript" charset="utf-8"></script>
+	    <link rel="stylesheet" href="css/mui.css" />
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/change_name.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/public.css" />
+		<title>搜索</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<input  type="submit" class="mui-btn mui-pull-right" id="next" value="确定" />
+			<h1 class="mui-title">性别</h1>
+		</header>
+		<div class="mui-content">
+			<div class="infor">
+				<input class="input_size" type="text" value="请输入手牌号"  />
+				<div class="canle"></div>
+			</div>
+		</div>
+		<script>
+		mui.init();
+			$(function(){
+				$('.mui-pull-left').click(function(){
+					 mui.openWindow({
+					    url: 'Dingdan_guanli.html'
+					  });
+//					window.location.href='Dingdan_guanli.html';
+				})
+				$('.mui-btn-negative').click(function(){
+					 mui.openWindow({
+					    url: 'sousuo_jieguo.html'
+					  });
+//					window.location.href='sousuo_jieguo.html';
+				})
+			})
+		</script>
+	</body>
+</html>

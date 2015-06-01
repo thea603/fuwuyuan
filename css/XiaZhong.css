@@ -1,0 +1,56 @@
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #FFFFFF;
+}
+.mui-bar-nav{
+	background: #FF3B3B;
+	color: white;
+}
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	background: #FFFFFF;
+}
+.infor{
+	width: 100%;
+	height: 55px;
+	background: white;
+	border-bottom: 1px solid #E0E0E0;
+	padding-top: 20px;
+}
+.size{
+	margin-left: 20px;
+	color: #8D8D8D;
+}
+.type{
+	margin-left: 12%;
+	font-size: 15px;
+	color: #456BB9;
+	letter-spacing: 1px;
+}
+.sao{
+	margin-left: 37%;
+	font-size: 15px;
+	color: #456BB9;
+}
+.mui-btn-negative{
+	border-radius: 0;
+	width: 80%;
+	background: #FF3B3B;
+	margin: 30px 10%;
+	padding: 10px 20px;
+	font-size: 16px;
+	letter-spacing: 3px;
+}
+
+
+
+
+
+
+

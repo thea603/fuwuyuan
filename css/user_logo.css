@@ -1,0 +1,57 @@
+.clear{
+	clear: both;
+}
+ul,li{
+	margin: 0;
+}
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #DEDEDE;
+}
+.mui-bar-nav{
+	background: #FF3B3B;
+	color: white;
+}
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+	letter-spacing: 1px;
+}
+.mui-content{
+	background: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+.box_1{
+	/*border: 1px solid red;*/
+	margin-top: 5px;
+	width: 100%;
+	height: auto;
+	background: #FFFFFF;
+	overflow: hidden;
+	/*padding: 10px 0 0 0px;*/
+}
+.box_1 img{
+	float: left;
+	/*border: 1px solid red;*/
+	display: block;
+	background: white;
+}
+.img_box{
+	/*border: 1px solid blue;*/
+	width: 100%;
+	float: left;
+	margin: 0px;
+	/*margin-left: -10px;*/
+}
+.size{
+	display: block;
+	float:right;
+	height: 20px;
+	margin: 20px auto;
+	/*border: 1px solid red;*/
+	font-size: 11px;
+	color: #BDBDBD;
+}

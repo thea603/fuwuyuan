@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <link rel="stylesheet" href="css/mui.css" />
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/technician_list.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/public.css" />
+		<title>搜索</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">技师查询</h1>
+		</header>
+	
+		<!--<nav class="mui-bar mui-bar-tab">
+  		    
+		</nav>-->
+		<div class="mui-content">
+			<div class="infor">
+				<input class="Search technician_Search" type="text" style="width:80%;margin-bottom: 0px;" placeholder="请输入技师工号/项目名"  />
+				<div class="Search_submit technician_Search_submit" id="Search_submit"> 确认</div>
+			</div>
+			
+			<div class="technician_lists">
+	<!-- 大厅技师 -->
+				<div class="technician hall_technician">
+					<!-- 技师信息 -->
+					<div class="technician_infor">
+						<div class="technician_avatar"><img src="images/u=4151571255,3470715585&fm=111&gp=0.jpg" alt="" /></div>
+						<div class="technician_ID">
+							<span>0121(女)</span>
+							<span>大厅技师</span>
+						</div>
+						<div class="technician_time">
+							13:00PM有预约
+						</div>
+						<a class="technician_lock" href="#lock">
+							锁定技师
+						</a>
+					</div>
+					<!-- 技师状态 -->
+					<div class="technician_state">
+						<span class="technician_evaluate">
+							<span>客户评价:</span>
+							<span>日式 头肩一流</span>
+						</span>
+						<span class="technician_change_state">
+							当前空闲
+						</span>
+					</div>
+				</div>
+	<!-- 美容技师 -->
+				<div class="technician face_technician">
+				<!-- 技师信息 -->
+					<div class="technician_infor">
+						<div class="technician_avatar"><img src="images/u=2280821555,1515240919&fm=58.jpg" alt="" /></div>
+						<div class="technician_ID">
+							<span>0121(女)</span>
+							<span>美容技师</span>
+						</div>
+						<div class="technician_time">
+							13:00PM有预约
+						</div>
+						<span class="technician_lock">
+							锁定技师
+						</span>
+					</div>
+					<!-- 技师状态 -->
+					<div class="technician_state">
+						<span class="technician_evaluate">
+							<span>客户评价:</span>
+							<span>日式 头肩一流</span>
+						</span>
+						<span class="technician_change_state">
+							当前空闲
+						</span>
+					</div>
+				</div>
+		<!-- 房间技师 -->
+				<div class="technician room_technician">
+					<!-- 技师信息 -->
+					<div class="technician_infor">
+						<div class="technician_avatar"><img src="images/u=2734634566,3459469132&fm=58.jpg" alt="" /></div>
+						<div class="technician_ID">
+							<span>0121(女)</span>
+							<span>房间技师</span>
+						</div>
+						<div class="technician_time">
+							13:00PM有预约
+						</div>
+						<span class="technician_lock">
+							锁定技师
+						</span>
+					</div>
+					<!-- 技师状态 -->
+					<div class="technician_state">
+						<span class="technician_evaluate">
+							<span>客户评价:</span>
+							<span>日式 头肩一流</span>
+						</span>
+						<span class="technician_change_state">
+							当前空闲
+						</span>
+					</div>
+				</div>	
+			
+			</div>
+			
+			<div   id="lock" class="mui-popover mui-popover-action ">
+				<div class="confirm_box">
+					<div  class="confirm_content">
+						<div class="add_technical">
+							<input type="text" id="tt" class="technician_num" value=""/>	
+							<button id="uu" class="technician_num_submit">添加</button>
+						</div>
+						<div  id="ddd" class="add_technical_content">
+							<!--<div>
+								 <span class="technician_num"></span>	
+							<button class="unlock technician_num_submit" >解锁</button> 
+							</div>-->
+							
+						</div>
+					</div>
+					<a href="#lock" class="submit_order">生成订单</a>
+					<a href="#lock" class="submit_lock">确定</a>
+				</div>
+		</div>
+			
+		<script>
+		
+	window.onload = function(){
+		 document.getElementById("uu").onclick=function(){
+     	var tt=document.getElementById('tt').value;
+         var ddd=document.getElementById("ddd");
+         var cc = document.createElement('div');
+            cc.setAttribute('className','technician_lock_lists')
+              cc.style.height='35px';
+         cc.innerHTML= '<span class="technician_num">'+tt+'</span>'+	
+					'<button class="unlock technician_num_submit" >解锁</button>' 
+         ddd.appendChild(cc);
+         
+       var jiesuo=document.getElementsByClassName("unlock")
+         for(var i= 0;i < jiesuo.length;i++){
+         	jiesuo[i].onclick=function(){
+         		this.parentNode.parentNode.removeChild(this.parentNode);
+         	}
+         }    
+     }
+	}
+		
+		
+//		mui.init();
+			$(function(){
+				$('.technician').click(function(){
+					 mui.openWindow({
+					    url: 'technician_detail.html'
+					  });
+//					window.location.href='technician_detail.html';
+				})
+				$('.mui-btn-negative').click(function(){
+//					 mui.openWindow({
+//					    url: 'sousuo_jieguo.html'
+//					  });
+					window.location.href='sousuo_jieguo.html';
+				})
+				
+			})
+		</script>
+	</body>
+</html

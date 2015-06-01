@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/Dingdan_guanli.css" rel="stylesheet"/>
+		<title>订单管理</title>
+	</head>
+	<body>
+		<header class=" mui-bar mui-bar-nav">
+			<h1 class="mui-title">XXXXX会所</h1>
+		</header>
+		<div class="mui-content">
+		  <div class="Avatar">
+			<img class="img_1" src="images/logo.png" width="100px" height="100px"/>
+		  </div>
+			<span class="type">NO.123</span>
+			<span class="triangle"></span>
+			<ul class="project_list ">
+				<li class="project order_lists"><a href="#">生成订单<span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-right right_arrows"></span></a></li>
+				<li class="project technician_select"><a href="#">技师查询<span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-right right_arrows"></span></a></li>
+				<li class="project order_search"><a href="#">订单查询<span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-right  right_arrows"></span></a></li>
+				<li class="project lock_technician"><a href="#">解锁技师<span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-right  right_arrows"></span></a></li>
+			</ul>
+			
+			
+		</div>
+	</body>
+	<script>
+	
+	$(function(){
+				$('.order_lists').click(function(){
+
+					mui.openWindow({
+					    url: 'book_order.html'
+					  });
+//					  window.location.href='book_order.html';
+				});		
+				
+				$('.technician_select').click(function(){
+
+					mui.openWindow({
+					    url: "technician_list.html"
+					  });
+//					  window.location.href="technician_list.html"; 
+				});			
+				
+				$('.Avatar').click(function(){
+
+					mui.openWindow({
+					    url: "GeRen_Xinxi.html"
+					  });
+//					  window.location.href="GeRen_Xinxi.html";  
+				});			
+					$('.order_search').click(function(){
+
+					mui.openWindow({
+					    url: "order_query_cancel.html"
+					  });
+//					  window.location.href="GeRen_Xinxi.html";  
+				});			
+				$('.lock_technician').click(function(){
+
+					mui.openWindow({
+					    url: "lock_technician.html"
+					  });
+//					  window.location.href="GeRen_Xinxi.html";  
+				});			
+			})
+function plusReady(){
+		if ('Android' == plus.os.name) {
+			var first = null;
+				mui.back = function() {
+					if (!first) {
+						first = new Date().getTime();
+						mui.toast('再按一次退出应用');
+						setTimeout(function() {
+							first = null;}, 1000);
+						}
+					else {
+						if (new Date().getTime() - first < 1000) {
+						plus.runtime.quit();
+							}
+						}
+									}
+						}
+						}
+			
+		</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <link rel="stylesheet" href="css/mui.css" />
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/technician_detail.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/public.css" />
+		<title>搜索</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">技师查询</h1>
+		</header>
+	
+		<div class="mui-content">
+			<!--技师信息-->
+			<div class="technician_info">
+				<div class="technician_img">
+					<img src="images/u=2280821555,1515240919&fm=58.jpg" alt="" />
+				</div>
+				<div class="technician_content">
+					<span>0121</span>
+					<span>(女)</span>
+					<span class="mui-icon mui-icon-contact">美容技师</span>
+					<span class="mui-icon mui-icon-phone">1501284746</span>
+				</div>
+			</div>
+			<!--项目预约-->
+			<div class="technician_book">
+			<div>预约</div>
+			   <ul>
+			   	<li>13:00PM有预约</li>
+			   	<li>13:00PM有预约</li>
+			   	<li>13:00PM有预约</li>
+			   	<li>13:00PM有预约</li>
+			   	<li>13:00PM有预约</li>
+			   </ul>
+			</div>
+			<!--项目-->
+			<div class="technician_project">
+				<div>项目</div>
+				<ul>
+					<li>美白保湿护理</li>
+					<li>面部刮那护理</li>
+					<li>娇兰抗皱护理</li>
+					<li>玫瑰精油护理</li>
+				</ul>
+			</div>
+			<!--技师其他信息-->
+			<div class="technician_other">
+				<div class="infor">
+					<span>这个月收藏</span>
+					<span>400次</span>
+				</div>
+				<div class="infor">
+					<span>语言</span>
+					<span>普通话、粤语、英语</span>
+				</div>
+				<div class="infor">
+					<span>最多人赞的项目</span>
+					<span>日式</span>
+				</div>
+				<div class="infor">
+					<span>最多人赞的技能</span>
+					<span>头肩一流</span>
+				</div>
+			</div>
+		</div>
+			
+		<script>
+		mui.init();
+			$(function(){
+				$('.mui-pull-right').click(function(){
+//					 mui.openWindow({
+//					    url: 'create_order.html'
+//					  });
+					window.location.href='create_order.html';
+				})
+				$('.technician_content').click(function(){
+					 mui.openWindow({
+					    url: 'Avatar_lists.html'
+					  });
+//					window.location.href='sousuo_jieguo.html';
+				})
+				
+			})
+		</script>
+	</body>
+</html>

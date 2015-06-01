@@ -1,0 +1,80 @@
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #FFFFFF;
+	margin: 0px;
+	padding: 0px;;	
+}
+
+
+.mui-title{
+	color: white;
+}
+.mui-content{
+	background: #FFFFFF;
+}
+.img_1{
+	display: block;
+	margin: 8px auto;
+	
+	border-radius: 50%;
+	
+}
+.Avatar{
+	width: 120px;
+	height: 120px;
+	border:3px solid #1FBBA6;
+	border-radius: 50%;
+	margin: 10px auto;
+}
+
+.type{
+	display: block;
+	width: 65px;
+	margin: 10px auto;
+	color: #535353;
+}
+.project_list{
+	background:#33CC99;
+	width:80%;
+	margin: 0px 10%;
+	border-radius: 10px;
+}
+.project{
+	height: 50px;
+	width: 100%;
+    list-style: none;
+    margin-left: -20px;
+	border-bottom: 1px solid #28B888;
+	font-size: 16px	
+}
+.project a{
+	line-height: 50px;
+	width:100%;
+	display: block;
+	padding-left:20px;
+	color: #FFFFFF;	
+	position: relative;
+}
+.triangle{
+	width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    display: block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1FBBA6;
+}
+
+.project a::before{
+	 border: 5px solid #8FFFDA;
+ 	 width: 0;
+  	 height: 0;
+  	 margin-top: 20px;
+  	 margin-left: -17px;
+ 	 position: absolute;
+ 	 border-radius: 50%;
+ 	 content: ''
+}
+
+
+

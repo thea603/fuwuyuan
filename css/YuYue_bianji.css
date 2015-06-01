@@ -1,0 +1,72 @@
+
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #F5F3F4;
+}
+.mui-bar-nav{
+	background: #FF3B3B;
+	color: white;
+}
+.mui-pull-left{
+	color: white;
+}
+.mui-pull-right{
+	color: #AA1818;
+	line-height: 45px;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	background: #FFFFFF;
+}
+.infor{
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #DEDEDE;
+	padding-top: 2px;
+	font-size: 14px;
+	color: #7B7879;
+	position: relative;
+}
+.type_1{
+	letter-spacing: 30px;
+	position: absolute;
+	top: 10px;
+	left: 5%;
+}
+.loca{
+	display: inline;
+	position: absolute;
+	top: 10px;
+	left: 22%;
+}
+.size{
+	color: #BDBDBD;
+	position: absolute;
+	top: 10px;
+	left: 45%;
+}
+.type_2{
+	position: absolute;
+	top: 10px;
+	left: 5%;
+}
+.infor input{
+	border-color: white;
+	display: inline;
+	width: 100%;
+	line-height: 20px;
+	padding-left: 27%;
+}
+input::-webkit-input-placeholder {
+	color: #BDBDBD !important; 
+	font-size: 14px;
+}
+input:focus{
+	border: 1px solid #6699FF;
+}
+
+

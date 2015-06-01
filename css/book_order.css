@@ -1,0 +1,158 @@
+
+
+body{
+	font-family: "Microsoft YaHei";
+	background: #EFEFF4;
+	margin: 0px;
+	padding: 0px;;
+}
+
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	height:100%;	
+}
+
+
+.book_Search_submit{
+	background:#6699FF;
+	color: white;
+}
+
+.order_lists ul{
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+}
+.order_title{
+	width: 100%;
+	background: #FFFFFF;
+	color:#0062CC;
+	font-size: 1.3em;
+	padding-left: 3%;
+	height: 40px;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #EFEFF4 ;
+	line-height: 40px;
+}
+.order_lists ul li{
+	color: #888888;
+	border-bottom:1px solid #DEDEDE;
+	list-style: none;
+	width: 93%;
+	font-size: 14px;
+	margin: 0 auto;
+	padding-left: 30px;
+	height: 40px;
+	line-height:40px;
+}
+.order_lists ul li::before{
+	 border: 5px solid #B6B6FC;
+ 	 width: 0;
+  	 height: 0;
+  	 margin-top: 15px;
+  	 margin-left: -17px;
+ 	 position: absolute;
+ 	 border-radius: 50%;
+ 	 content: ''
+}
+.lists{
+	width: 45%;
+	/*border:1px solid red;*/
+	height:40px ;
+	float: right;
+	/*font-size: .5em;*/
+	letter-spacing: 0px;
+	margin-right: 10%;	
+}
+.footer{
+	/*border:1px solid red;*/
+	width:90%;
+	margin: 10px  auto ;
+	height: 50px;;
+}
+.look{
+	/*border:1px solid red;*/
+	float: right;
+	color: #007AFF;
+}
+li:nth-of-type(1){
+	letter-spacing: 12px;
+}
+
+li:nth-of-type(2){
+	letter-spacing: 40px;
+}
+li:nth-of-type(3){
+	letter-spacing: 40px;
+}
+li:nth-of-type(4){
+	letter-spacing: 2px;
+}
+li:nth-of-type(5){
+	letter-spacing: 40px;
+}
+li:nth-of-type(6){
+	letter-spacing: 40px;
+}
+li:nth-of-type(7){
+	letter-spacing: 2px;
+}
+li:nth-of-type(8){
+	letter-spacing: 2px;
+}
+.footer span:nth-of-type(1){
+	/*border:1px solid red;*/
+	width:48%;
+	height: 90%;
+	margin-top: 1%;
+	background:  #007AFF;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 10px;
+	color: #FFFFFF;
+	display: block;
+}
+.footer span:nth-of-type(2){
+	/*border:1px solid red;*/
+	width:48%;
+	margin-top: 1%;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 1px;
+	background: #1FBBA6;
+	color: #FFFFFF;
+	float: right;
+	height: 90%;
+	display: block;
+}
+.order_state{
+	margin-top: 5px;
+	width:100%;
+	background: #FFFFFF;
+	height: auto;
+	border:1px solid #1FBBA6;
+}
+.state{
+	width: 100%;
+	color:#8C898A;
+	line-height: 40px;
+	height: 40px;
+	letter-spacing: 10px;
+	padding-left: 5%;
+	border-left:5px solid #1FBBA6;
+	background: #FFFFFF;
+	}
+.reason{
+	width:93%;
+	height: 30px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-top: 1px solid #DEDEDE;
+}

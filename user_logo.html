@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <!--<script src="js/cancel.js" type="text/javascript" charset="utf-8"></script>-->
+	    <link rel="stylesheet" href="css/mui.css" />
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/user_logo.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/public.css" />
+		<title>搜索</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<input  type="submit" class="mui-btn mui-pull-right" id="next" value="确定" />
+			<h1 class="mui-title">头像</h1>
+		</header>
+		<div class="mui-content">
+			<div class="box_1">
+				<div class="img_box" style="margin-left:-10px;">
+					<img src="images/u28.png" width="65px" height="65px" class="upload_img"/>
+					<span class="size" >上传个人头像</span>
+				</div>
+			</div>
+		</div>
+		<script>
+		
+		//照片大小
+		var width = $(window).width();
+		width = width/3-40;
+		$('.upload_img').attr('width',width);
+		$('.upload_img').attr('height',width);
+		$('.img_box').css('margin-left','1px');
+		
+
+			
+		
+var server="http://demo.dcloud.net.cn/helloh5/uploader/upload.php";
+var files=[];
+// 上传文件
+function upload(){
+	if(files.length<=0){
+		plus.nativeUI.alert("没有添加上传文件！");
+		return;
+	}
+	outSet("开始上传：")
+	var wt=plus.nativeUI.showWaiting();
+	var task=plus.uploader.createUpload(server,
+		{method:"POST"},
+		function(t,status){ //上传完成
+			if(status==200){
+				outLine("上传成功："+t.responseText);
+				plus.storage.setItem("uploader",t.responseText);
+				var w=plus.webview.create("uploader_ret.html","uploader_ret.html",{scrollIndicator:'none',scalable:false});
+				w.addEventListener("loaded",function(){
+					wt.close();
+					w.show("slide-in-right",300);
+				},false);
+			}else{
+				outLine("上传失败："+status);
+				wt.close();
+			}
+		}
+	);
+	task.addData("client","HelloH5+");
+	task.addData("uid",getUid());
+	for(var i=0;i<files.length;i++){
+		var f=files[i];
+		task.addFile(f.path,{key:f.name});
+	}
+	task.start();
+}
+// 从相册添加文件
+$('.mui-content').on('click','.upload_img',function(){
+	if($('.upload_img').length>1){
+//		alert('只能上传8张图片！');
+		eixt;
+	};
+	var that = $(this);
+//	var img = "<div class='img_box'>"+
+//					"<img src='images/shangchuan.png'  class='upload_img' width='"+width+"'  height='"+width+"'/>"+
+//					"<span class='size' >上传个人头像</span>"+
+//				"</div>";
+	plus.gallery.pick(function(p){
+//		alert(that);
+		that.attr("src",p);
+        appendFile(p);
+        $('.box_1').append(img);
+    });
+	
+})
+/*
+$('.img_box').click(function(){
+	var t = $(this);
+	var img = '<div class="img_box">'+
+					'<img src="images/shangchuan.png" width="65px" height="65px" class="upload_img"/>'+
+					'<span class="size" >请上传工作照</span>'+
+				'</div>';
+	plus.gallery.pick(function(p){
+		alert(t);
+		alert(p);
+		alert(t.attr("src"));
+        appendFile(p);
+        $('.box_1').append(img);
+    });
+})
+*/
+//function appendByGallery(){
+//	plus.gallery.pick(function(p){
+//      appendFile(p);
+//  });
+//}
+// 添加文件
+var index=1;
+function appendFile(p){
+	var n=p.substr(p.lastIndexOf('/')+1);
+	files.push({name:"uploadkey"+index,path:p});
+	index++;
+}
+// 产生一个随机数
+function getUid(){
+	return Math.floor(Math.random()*100000000+10000000).toString();
+}
+
+
+		</script>
+	</body>
+</html>

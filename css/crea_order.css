@@ -1,0 +1,241 @@
+
+
+body{
+	font-family: "Microsoft YaHei";
+	background: #EFEFF4;
+	margin: 0px;
+	padding: 0px;;
+}
+
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	/*position: relative;*/
+	height:100%;
+	
+}
+.infor{
+	/*border:1px solid red;*/
+	height: 40px;
+	width: 92%;
+	margin: 0 auto;
+}
+.book_Search{
+	width: 80%;
+	height: 30px;
+	border:none;
+	float: left;
+	font-size: 15px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	-webkit-box-shadow:1px 1px 5px #999;    
+	padding-left: 15px;
+}
+.book_Search_submit{
+	background:#6699FF;
+	width: 20%;
+	-webkit-box-shadow:1px 1px 5px #999;  
+	letter-spacing: 5px;
+	float: left;
+	color: white;
+	height: 30px;
+	margin-top: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+.order_title{
+	width: 100%;
+	background: #FFFFFF;
+	color:#0062CC;
+	font-size: 1.3em;
+	height: 40px;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #EFEFF4 ;
+	padding-left: 15px;
+	line-height: 40px;
+}
+.order_lists{
+	margin-top: 10px;
+}
+.order_lists ul{
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+}
+.order_lists ul li{
+	color: #888888;
+	border-bottom:1px solid #DEDEDE;
+	list-style: none;
+	width: 93%;
+	font-size: 14px;
+	margin: 0 auto;
+	padding-left: 30px;
+	height: 40px;
+	line-height:40px;
+}
+.order_lists ul li::before{
+	 border: 5px solid #B6B6FC;
+ 	 width: 0;
+  	 height: 0;
+  	 margin-top: 15px;
+  	 margin-left: -17px;
+ 	 position: absolute;
+ 	 border-radius: 50%;
+ 	 content: ''
+}
+.lists{
+	width: 45%;
+	/*border:1px solid red;*/
+	height:40px ;
+	float: right;
+	/*font-size: .5em;*/
+	letter-spacing: 0px;
+	margin-right: 10%;	
+}
+.footer{
+	/*border:1px solid red;*/
+	width:90%;
+	margin: 10px  auto ;
+	height: 50px;;
+}
+.look{
+	/*border:1px solid red;*/
+	float: right;
+	color: #007AFF;
+}
+li:nth-of-type(1){
+	letter-spacing: 12px;
+}
+
+li:nth-of-type(2){
+	letter-spacing: 40px;
+}
+li:nth-of-type(3){
+	letter-spacing: 12px;
+}
+li:nth-of-type(4){
+	letter-spacing: 4px;
+}
+li:nth-of-type(5){
+	letter-spacing: 40px;
+}
+li:nth-of-type(6){
+	letter-spacing: 4px;
+}
+li:nth-of-type(7){
+	letter-spacing: 40px;
+	background: url(../images/arrow-rigth.png) no-repeat right;
+	background-size: 10px;
+}
+li:nth-of-type(8){
+	letter-spacing: 4px;
+}
+
+.footer span:nth-of-type(1){
+	/*border:1px solid red;*/
+	width:48%;
+	height: 90%;
+	margin-top: 1%;
+	background:  #007AFF;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 10px;
+	color: #FFFFFF;
+	display: block;
+}
+.footer a{
+	/*border:1px solid red;*/
+	width:48%;
+	margin-top: 1%;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 1px;
+	background: #1FBBA6;
+	color: #FFFFFF;
+	float: right;
+	height: 90%;
+	display: block;
+}
+.order_state{
+	margin-top: 5px;
+	width:100%;
+	background: #FFFFFF;
+	height: auto;
+	border:1px solid #1FBBA6;
+}
+.state{
+	width: 100%;
+	color:#8C898A;
+	line-height: 40px;
+	height: 40px;
+	letter-spacing: 10px;
+	padding-left: 5%;
+	border-left:5px solid #1FBBA6;
+	background: #FFFFFF;
+	}
+.reason{
+	width:93%;
+	height: 30px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-top: 1px solid #DEDEDE;
+}
+.project_select{
+	margin-top: 10px;
+	background: #FFFFFF;
+	/*border:1px solid red;*/
+	height:190px;
+}
+h5{
+	padding-left: 30px;
+	height: 40px;
+	width: 93%;
+	margin: 0 auto;
+	line-height: 40px;
+	border-bottom:1px solid #DEDEDE ;
+}
+h5::before{
+	 border: 5px solid #B6B6FC;
+ 	 width: 0;
+  	 height: 0;
+  	 margin-top: 15px;
+  	 margin-left: -18px;
+ 	 position: absolute;
+ 	 border-radius: 50%;
+ 	 content: ''
+}
+.project_select ul{
+	/*padding: 0px;;*/
+	margin: 0px;;
+}
+/*.project_select ul li span{
+	padding-left: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #6F6F6F;
+}*/
+.project_select ul li div{
+	color: #8C898A;
+	/*border:1px solid red;*/
+}
+
+.project_select ul li{
+	border-top:1px solid #DEDEDE;
+	height: 35px；
+	width: 95%;
+	list-style: none;
+	/*margin-bottom: 10px;*/
+	letter-spacing:0px;
+	/*padding-left: 30px;*/
+}
+.project_select ul li:nth-of-type(1){
+	border:none;
+}

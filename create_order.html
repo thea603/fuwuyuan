@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <!--<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>-->
+	    <!--<script src="js/touch.js" type="text/javascript" charset="utf-8"></script>-->
+	    <link rel="stylesheet" href="css/mui.css" />
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/crea_order.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/public.css" />
+		<title>搜索</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class=" mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加订单</h1>
+		</header>
+		<!--<nav class="mui-bar mui-bar-tab">
+  		    
+		</nav>-->
+		<div class="mui-content">
+			<div class="order_lists" >
+			  <ul>
+			  	<li >订单号<span class="lists order_num">1111122</span></li>
+			  	<li>手牌<span class="lists shoupai_num">34</span></li>
+			  	<li>房间号<span class="lists Customer">A56</span></li>
+			  	<li>技师工号<span class="lists employee_id">023<span class="look">查看技师</span></span></li>
+			  	<li>姓名<span class="lists project">桑拿</span></li>
+			  	<li>手机号码<span class="lists price">$234</span></li>
+			  	<li>项目<span class="lists create_time">泰式按摩</span></li>
+			  	<li>服务时间<span class="lists book_time">18:00</span></li>
+			  </ul>
+			</div>
+			<div class="project_select">
+				
+				<h5>顾客症状(四选二)</h5>
+				<ul>
+					<li>
+						<div class="mui-input-row mui-checkbox mui-left ">
+							<label>肩头</label>
+							<input name="project" type="checkbox">
+						</div>
+					</li>
+					  <li>
+					  	<div class="mui-input-row mui-checkbox mui-left">
+							<label>背部</label>
+							<input name="name" type="checkbox">
+						</div>
+					  </li>
+					   <li>
+					   	<div class="mui-input-row mui-checkbox mui-left">
+							<label>腰部</label>
+							<input name="project" type="checkbox">
+						</div>
+					   </li>
+					    <li>
+					    	<div class="mui-input-row mui-checkbox mui-left">
+							<label>腿部</label>
+							<input name="project" type="checkbox">
+						</div>
+					    </li>
+				</ul>
+			</div>
+			<div class="footer">
+  		    		<span id="cancel">取消</span>
+  		    		<a href="#submit">生成订单</a>
+  		    </div>
+		</div>
+		
+		<div   id="submit" class="mui-popover mui-popover-action ">
+			<div class="confirm_box">
+				<div class="confirm_content">
+					<div class="content">你的订单会直接发给技师</div>
+					<div class="content">您是否提交订单？</div> 
+				</div>
+			
+				
+				<a href="#submit" class="submit">确定</a>
+			</div>
+		</div>
+<script type="text/javascript">
+	mui.init({});
+$(function(){
+	 $('input[type=checkbox]').click(function(){
+		if($("input[name='project']:checked").length >= 2)
+		{
+			$(this).removeAttr("checked");
+			
+			mui.alert('只能选择两项','症状',function(){
+	  		
+	  	});
+				
+		}
+		});
+		
+		$('.look').click(function(){
+
+					mui.openWindow({
+					    url: "technician_list.html"
+					  });
+				});			
+	})
+
+
+</script> 
+	</body>
+</html>

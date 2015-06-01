@@ -1,0 +1,113 @@
+ul,li{
+	margin: 0;
+}
+body{
+	font-family: "Microsoft YaHei","iconfont"  !important;
+	background: #FFFFFF;
+}
+
+header>a{
+	color: white;
+}
+.mui-title{
+	color: white;
+	letter-spacing: 1px;
+}
+.mui-content{
+	background: #F1F1F1;
+}
+.box_1{
+	width: 100%;
+	height: 110px;
+	background: #F1F1F1;
+	padding: 10px 0 0 0px;
+}
+
+.box_1 img{
+	display: block;
+	margin-left: 10px;
+	background: white;
+}
+.size{
+	font-size: 15px;
+	color: #BDBDBD;
+	
+}
+.infor input{
+	border: none;
+	margin-left: 20%;
+	display: inline;
+	width: 80%;
+	line-height: 15px;
+	height: 48px;
+	text-align: right;
+	font-size: 15px;
+}
+
+.size_2{
+	font-size: 15px;
+	/*border:1px solid red;*/
+	color: #BDBDBD;
+	position: absolute;
+	top: 13px;
+	left: 10px;
+}
+.right{
+	float: right;
+	font-size: 13px;
+}
+
+.infor{
+	height: 50px;
+	width: 100%;
+	background-color: #FFFFFF;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #F1F1F1;
+	position: relative;
+}
+.loca{
+	position: absolute;
+	top: 13px;
+	left: 10px;
+}
+.box_2{
+	background: #DFDFDF;
+	padding-bottom: 15px;
+}
+.box_2 ul li{
+	font-size: 14px;
+	color: #6F6F6F;
+}
+.box_3{
+	background: #F1F1F1;
+	width: 100%;
+	height: 50px;
+}
+.mui-btn-negative{
+	border-radius: 0;
+	width: 70%;
+	height: 45Px;
+	margin: 0 15% 10px 15%;
+	/*background: #ED2532;*/
+	font-size: 16px;
+	border:none;
+	/*letter-spacing: 10px;*/
+}
+
+.infor:nth-child(1){
+	margin-top: 10px;
+}
+/*input::-ms-input-placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder
+input:-ms-input-placeholder,
+input:-webkit-input-placeholder,
+input:-moz-placeholder {
+	color: #BDBDBD !important; 
+	font-size: 14px;
+	text-align: right;
+	/*padding-left: 50%;*/ 
+}*/
+input:focus{
+	border: 1px solid #6699FF;
+}

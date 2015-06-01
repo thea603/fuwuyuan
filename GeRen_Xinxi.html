@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/public.css" />
+	    <link href="css/iconfont.css" rel="stylesheet"/>
+	    <link href="css/GeRen_Xinxi.css" rel="stylesheet"/>
+		<title>个人信息</title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">NO.123</h1>
+		
+		</header>
+		<div class="mui-content">
+			<div class="infor" id="user_logo">
+				<span class="size">头像</span>
+				<span class=" right"><img src="images/logo.png" alt="" /></span>
+			</div>
+			<div class="infor" id="user_name">
+				<span class="size">姓名</span>
+				
+				<span class="right">吴伟东</span>
+				
+			</div>
+			<div class="infor" id="user_country">
+				<span class="size">籍贯</span>
+				<span class="right">深圳</span>
+			</div>
+			<div class="infor" id="uset_id">
+				<span class="size">工号</span>
+				<span class="right">000001</span>
+			</div>
+			<div class="infor" id="user_numebr">
+				<span class="size other">手机号码 </span>
+				<span class="right">13012333333</span>
+			</div>
+			<div class="infor" id="user_sex">
+				<span class="size">性别</span>
+				<span class="right">男</span>
+			</div>
+			<div class="infor" id="user_birthday">
+				<span class="size other">出生年月</span>
+				<span class="right">1991.8.25</span>
+			</div>
+			<div class="infor" id="user_ids">
+				<span class="size  other">身份证号</span>
+				<span class="right">440301199118171615</span>
+			</div>
+			<div class="infor" id="user_address">
+				<span class="size">住址</span>
+				<span class="right">深圳福田新村</span>
+			</div>
+			
+			<div class="infor"  id="user_password">
+				<span class="size other" style="color:#007AFF;">修改密码</span>
+			</div>
+			
+		</div>
+		<script>
+		
+			$(function(){
+				
+				$('#user_name').click(function(){
+					mui.openWindow({
+					    url: 'change_name.html'
+					  });
+//					window.location.href='change_name.html';
+				});
+				$('#user_sex').click(function(){
+					mui.openWindow({
+					    url: 'change_sex.html'
+					  });
+//					window.location.href='change_sex.html';
+				});
+				$('#user_country').click(function(){
+					mui.openWindow({
+					    url: 'change_jiguan.html'
+					  });
+//					window.location.href='change_jiguan.html';
+				})
+				$('#user_birthday').click(function(){
+					mui.openWindow({
+					    url: 'change_birthday.html'
+					  });
+//					window.location.href='change_birthday.html';
+				})
+				$('#user_ids').click(function(){
+					mui.openWindow({
+					    url: 'change_userID.html'
+					  });
+//					window.location.href='change_userID.html';
+				})
+				$('#user_address').click(function(){
+					mui.openWindow({
+					    url: 'change_address.html'
+					  });
+//					window.location.href='change_address.html';
+				})
+				$('#user_password').click(function(){
+					mui.openWindow({
+					    url: 'recover_password.html'
+					  });
+//					window.location.href='recover_password.html';
+				})
+				
+			})
+			
+		
+		</script>
+	</body>
+</html>
