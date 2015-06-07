@@ -8,13 +8,14 @@ i = 0;
 j = 0;
 count = 0;
 MM = 0;
-SS = 60;  // 秒 90s
+SS = 120;  // 秒 90s
 MS = 0;
 totle = (MM+1)*600;
 d = 180*(MM+1);
 MM = "0" + MM;
-var gameTime = 60;
+var gameTime = 120;
 //count down
+document.onclick=function(){alert(123)};
 var showTime = function(){
     totle = totle - 1;
     if (totle == 0) {
@@ -53,7 +54,7 @@ var showTime = function(){
         ;
     }
     ;
-    $(".time").html(SS + "分钟");
+    $(".time").html(SS + "钟");
 	
 };
 
