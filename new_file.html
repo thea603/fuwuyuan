@@ -57,6 +57,8 @@ function onmarked(type,result,file){
     	break;
     }
     result = result.replace(/\n/g, '');
+    
+    alert(result)
     wo.evalJS("scaned('"+ type +"','"+ result +"','"+ file +"');");
     back();
 }

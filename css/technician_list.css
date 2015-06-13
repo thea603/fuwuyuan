@@ -19,7 +19,7 @@ header>a{
 	
 }
 .infor{
-
+	position:relative
 	height: 40px;
 	width: 92%;
 	/*border:1px solid red;*/
@@ -91,10 +91,12 @@ header>a{
 	line-height: 30px;
 	/*margin-right: 2%;*/
 	margin-top: 8px;
+	
 	color:#B6B7B8 ;
 	border:1.5px solid #1FBBA6;
 	
 }
+
 .technician_state{
 	width: 100%;
 	height: 35px;
@@ -170,11 +172,21 @@ header>a{
 	height: 50px;
 }
 .add_technical_content{
+	border:1px solid red;
 	height: 100px;
+	width:100%;
 	overflow: scroll;
 }
 .unlock{
 	background: #FFFFFF;
 	color:#000000
+}
+.window{
+	position:absolute;
+	top:45px;
+	display: none;
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
 }
 

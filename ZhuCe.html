@@ -12,7 +12,7 @@
 	    <link href="css/iconfont.css" rel="stylesheet"/>
 	    <link href="css/ZhuCe.css" rel="stylesheet"/>
 	    	<script src="js/jquery-html5Validate-min.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 
 	  	<script src="js/common.js"></script>
 		<title>注册</title>
@@ -37,44 +37,64 @@
 				</div>
 				<div class="infor">
 					<span class="mui-icon iconfont icon-tubiao"></span>
-					<input type="text" placeholder="请输入您的密码"    required="" />
+					<input type="password" placeholder="请输入您的密码"    required="" />
 				</div>
 				<div class="infor_2">
 					<span class="mui-icon iconfont icon-yanzhengma"></span>
 					<input type="text" placeholder="请输入验证码" />
-					<button class="mui-btn mui-btn-primary" id='btn'>60秒</button>
+					<button class="mui-btn mui-btn-primary" id='btn'>获取验证码</button>
 				</div>
 				<button class="mui-btn mui-btn-negative mui-bar-nav" id="login" >立即注册</button>
 			</form>
 		</div>
 		
 		<script>
+		$(function(){
+			$("#login").click(function(){
+				mui.get('http://192.168.1.77:3000/users',{data:"123"},function(data){
+//						var obj = JSON.parse(data);
+						console.log(data.length);
+						for(i=0;i<data.length;i++){
+							console.log(data[i]['phone_number'])
+						}
+					}
+				);
+			})
+			
+		})
+		
+		
+		
+		
 			$("#testForm").html5Validate(function() {
 				alert('go');
 ////				alert($('#testForm').serialize());
-////				$.get('http://192.168.1.100/index.php',$('#testForm').serialize(),function(data) {
-////					alert(data);
+//				$.get('http://192.168.1.77:3000/',$('#testForm').serialize(),function(data) {
+//					alert(data);
 //				});
 		});
-				$(function(){
-				$('#login').click(function(){
-			
-					mui.openWindow({
-					    url: 'WanShan_ziliao.html'
-					  });
-//					window.location.href='Dingdan_guanli.html';
-				});			
-			})
+//				$(function(){
+//				  $.get('http://192.168.1.77:3000/users',function(data){  
+//		 					var obj = JSON.parse(data);
+//		 					alert(obj)
+//					 })
+////				$('#login').click(function(){
+////					mui.openWindow({
+////					    url: 'WanShan_ziliao.html'
+////					  });
+////
+////				});			
+//			})
 //		mui.init({});
 	
 document.getElementById("btn").addEventListener("click",function(){
-    			 var count = 60-1;
+    			 var count = 60;
                 var countdown = setInterval(CountDown, 1000);
                 function CountDown() {
 //                  $("#btn").attr("disabled", true);
                     $("#btn").html( count + " 秒");
                     if (count == 0) {
-//                      $("#btn").html("获取验证码").removeAttr("disabled");、
+//                      $("#btn").html("获取验证码").removeAttr("disabled");
                         clearInterval(countdown);
                     }
                     count--;

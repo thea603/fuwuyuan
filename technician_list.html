@@ -4,12 +4,13 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	    <title></title>
-	    <script src="js/mui.min.js"></script>
+	    <script src="js/mui.js"></script>
 	    <script src="js/jquery-2.1.0.js"></script>
 	    <link rel="stylesheet" href="css/mui.css" />
 	    <link href="css/iconfont.css" rel="stylesheet"/>
 	    <link href="css/technician_list.css" rel="stylesheet"/>
 	    <link rel="stylesheet" href="css/public.css" />
+	    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<title>搜索</title>
 	</head>
 	<body>
@@ -22,7 +23,7 @@
   		    
 		</nav>-->
 		<div class="mui-content">
-			<div class="infor">
+			<div class="infor" >
 				<input class="Search technician_Search" type="text" style="width:80%;margin-bottom: 0px;" placeholder="请输入技师工号/项目名"  />
 				<div class="Search_submit technician_Search_submit" id="Search_submit"> 确认</div>
 			</div>
@@ -109,38 +110,44 @@
 						</span>
 					</div>
 				</div>	
-			
+			</div>
+			<div class="window">
+						<div class="confirm_box">
+							<div  class="confirm_content">
+								<div class="add_technical">
+									<input type="text" id="tt" class="technician_num" value=""/>	
+									<button id="uu" class="technician_num_submit">添加</button>
+								</div>
+								<div  id="scroll" class="add_technical_content" >
+									<!--<div>
+										 <span class="technician_num"></span>	
+									<button class="unlock technician_num_submit" >解锁</button> 
+									</div>-->
+									
+								</div>
+							</div>
+							<a href="#lock" class="submit_order">生成订单</a>
+							<a href="#lock" class="submit_lock">确定</a>
+						</div>
+			</div>
 			</div>
 			
-			<div   id="lock" class="mui-popover mui-popover-action ">
-				<div class="confirm_box">
-					<div  class="confirm_content">
-						<div class="add_technical">
-							<input type="text" id="tt" class="technician_num" value=""/>	
-							<button id="uu" class="technician_num_submit">添加</button>
-						</div>
-						<div  id="ddd" class="add_technical_content">
-							<!--<div>
-								 <span class="technician_num"></span>	
-							<button class="unlock technician_num_submit" >解锁</button> 
-							</div>-->
-							
-						</div>
-					</div>
-					<a href="#lock" class="submit_order">生成订单</a>
-					<a href="#lock" class="submit_lock">确定</a>
-				</div>
-		</div>
+			<!--<div   id="lock" class="mui-popover mui-popover-action" >-->
+		
+		<!--</div>-->
 			
 		<script>
 		
 	window.onload = function(){
+//		
 		 document.getElementById("uu").onclick=function(){
      	var tt=document.getElementById('tt').value;
-         var ddd=document.getElementById("ddd");
+         var ddd=document.getElementById("scroll");
          var cc = document.createElement('div');
             cc.setAttribute('className','technician_lock_lists')
               cc.style.height='35px';
+              
+              
          cc.innerHTML= '<span class="technician_num">'+tt+'</span>'+	
 					'<button class="unlock technician_num_submit" >解锁</button>' 
          ddd.appendChild(cc);
@@ -169,6 +176,13 @@
 //					  });
 					window.location.href='sousuo_jieguo.html';
 				})
+				$('.technician_lock').click(function(){
+					$(".window").show();
+				})
+				$('.submit_lock').click(function(){
+					$(".window").hide();
+				})
+				
 				
 			})
 		</script>

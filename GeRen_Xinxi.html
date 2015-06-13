@@ -10,6 +10,7 @@
 	    <link rel="stylesheet" href="css/public.css" />
 	    <link href="css/iconfont.css" rel="stylesheet"/>
 	    <link href="css/GeRen_Xinxi.css" rel="stylesheet"/>
+	     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<title>个人信息</title>
 	</head>
 	<body>
@@ -21,7 +22,7 @@
 		<div class="mui-content">
 			<div class="infor" id="user_logo">
 				<span class="size">头像</span>
-				<span class=" right"><img src="images/logo.png" alt="" /></span>
+				<span class=" right"><img src="images/logo.png" alt=""  class="upload_img"/></span>
 			</div>
 			<div class="infor" id="user_name">
 				<span class="size">姓名</span>
@@ -64,6 +65,22 @@
 			
 		</div>
 		<script>
+		
+		var width = $(window).width();
+		width = width/3-40;
+		$('.upload_img').attr('width',width);
+		$('.upload_img').attr('height',width);
+
+		$('#user_logo').on('click','.upload_img',function(){
+			var that = $(this);
+			plus.gallery.pick(function(p){
+				that.attr("src",p);
+				
+		        appendFile(p);
+    });
+	
+})
+			
 		
 			$(function(){
 				

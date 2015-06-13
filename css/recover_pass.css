@@ -20,7 +20,7 @@ header>a{
 }
 
 .infor{
-	margin-top: 1px;
+	margin-bottom: 5px;
 	height: 40px;
 	background: white;
 	position: relative;
@@ -46,7 +46,7 @@ header>a{
 .infor_2{
 	margin-top: 1px;
 	height: 40px;
-	width: 70%;
+	width: 73%;
 	background: white;
 	position: relative;
 }
@@ -69,7 +69,9 @@ header>a{
 	padding-left: 30px;
 }
 #btn{
-	color:#FFFFFF
+	color:#FFFFFF;
+	margin-top:5px;
+	margin-left: 3px;
 }
  .mui-btn-positive{
 	width: 29%;
